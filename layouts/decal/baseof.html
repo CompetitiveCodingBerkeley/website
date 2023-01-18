@@ -1,0 +1,26 @@
+<!doctype html>
+<html>
+	<head>
+		<title>{{- .Site.Title -}}</title>
+		{{ hugo.Generator }}
+		<meta charset="utf-8">
+		<link rel="stylesheet" href="{{ "css/style.css" | relURL }}"/>
+	</head>
+	<body>
+		<header>
+			<nav class="navbar">
+				<div class="navbar-brand">
+					<a href={{ "/decal" | relURL }}><em><b>Intro to Competitive Programming and Algorithms</b></em></a>
+					<a href={{ "/" | relURL }}><span>by Competitive Coding @ Berkeley</span></a>
+				</div>
+				<div class="navbar-menu">
+					<a href={{ "/" | relURL }}>club</a>
+					<a href="https://discord.gg/Ej5Dy6SC">discord</a>
+				</div>
+			</nav>
+		</header>
+		<main role="main">
+			{{ block "main" . }}{{ end }}
+		</main>
+	</body>
+</html>

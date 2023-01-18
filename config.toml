@@ -1,0 +1,4 @@
+baseURL = 'https://competitivecodingberkeley.github.io'
+languageCode = 'en-us'
+title = 'Competitive Coding @ Berkeley'
+markup.goldmark.renderer.unsafe = true
