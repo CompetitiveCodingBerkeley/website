@@ -10,7 +10,7 @@ Monday 6:30-8 PM @ Physics Building 2
 
 ### Book
 
-[CSES Handbook](cses.fi/book.pdf)
+[CSES Handbook](https://cses.fi/book.pdf)
 
 # Schedule
 
