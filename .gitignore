@@ -1,2 +1,6 @@
 *.lock
 node_modules
+*.swp
+*.swo
+*.swn
+_gen

@@ -39,9 +39,11 @@ body {
 	font-family: $family-display;
 }
 
-.navbar-brand-image {
-	position: absolute;
-	left: -2rem;
+@include gt(930px) {
+	.navbar-brand-image {
+		position: absolute;
+		left: -2rem;
+	}
 }
 
 a.navbar-brand, .navbar-brand a {

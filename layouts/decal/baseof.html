@@ -2,19 +2,13 @@
 <html>
 	<head>
 		<title>{{- .Site.Title -}}</title>
-		{{ hugo.Generator }}
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-		<link rel="stylesheet" href="{{ "css/style.css" | relURL }}"/>
-		<link rel="preconnect" href="https://fonts.googleapis.com">
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-		<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:wght@400;500;700&family=Inter:wght@400;700&display=swap" rel="stylesheet">
+		{{ partial "head.html" . }}
 	</head>
 	<body>
 		<header>
 			<nav class="navbar">
 				<div class="navbar-brand">
-					<a href={{ "/decal" | relURL }}><em><b>Intro to Competitive Programming and Algorithms</b></em></a>
+					<a href={{ "/decal" | relURL }}><em><b>Introduction to Competitive Programming and Algorithms</b></em></a>
 					<a href={{ "/" | relURL }}><span>by Competitive Coding @ Berkeley</span></a>
 				</div>
 				<div class="navbar-menu">
