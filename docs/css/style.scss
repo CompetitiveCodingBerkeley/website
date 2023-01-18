@@ -1,0 +1,122 @@
+$title-size: 1.25rem;
+$subtitle-size: 1.125rem;
+$breakpoint-gap: 32px;
+
+$family: "Inter";
+$family-display: "IBM Plex Serif";
+
+$breakpoints:   (
+	"big": 900px,
+);
+
+$container-override: (
+	"big": 860px,
+);
+
+$link: #003262;
+
+@import "../../node_modules/briefscss/briefs.scss";
+
+a {
+	font-weight: 500;
+}
+
+body {
+	background-color: #ebe9e5;
+	color: #333;
+}
+
+.navbar {
+	position: relative;
+	@extend .container;
+	padding-top: 2rem;
+	padding-bottom: 0.5rem;
+}
+
+.navbar-brand {
+	font-weight: 900;
+	font-size: 1.25rem;
+	font-family: $family-display;
+}
+
+.navbar-brand-image {
+	position: absolute;
+	left: -2rem;
+}
+
+a.navbar-brand, .navbar-brand a {
+	display: block;
+	color: inherit;
+}
+
+.navbar-brand span {
+	font-size: 1rem;
+	font-weight: 400;
+}
+
+.navbar-menu {
+	margin-top: 0.5rem;
+}
+
+table {
+	border-collapse: separate;
+	border-radius: 4px;
+	background-color: white;
+}
+
+table {
+	border: 1px solid #999;
+}
+
+td + td, th + th {
+	border-left: 1px solid #999;
+}
+
+th:first-child {
+	border-radius: 4px 0 0 0;
+}
+
+th:last-child {
+	border-radius: 0 4px 0 0;
+}
+
+tr:not(:first-child) td, tr:not(:first-child) th {
+	border-top: 1px solid #999;
+}
+
+tr.break {
+	font-style: italic;
+	background: repeating-linear-gradient(
+		-45deg,
+		transparent,
+		transparent 10px,
+		rgba(255,155,0,0.2) 10px,
+		rgba(255,155,0,0.2) 20px);
+}
+
+td, th {
+	padding: 0.25rem;
+}
+
+th {
+	background-color: #ddd;
+	font-weight: bold;
+}
+
+strong {
+	font-weight: bold;
+}
+
+.announcement > span {
+	display: block;
+	font-size: 0.75rem;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+
+.announcement {
+	background: white;
+	border: 1px solid #999;
+	border-radius: 4px;
+	padding: 0.5rem;
+}

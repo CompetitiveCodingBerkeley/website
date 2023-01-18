@@ -1,0 +1,1044 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, button, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+:root {
+  --black: hsl(231deg, 9%, 4%);
+  --dark: hsl(231deg, 9%, 30%);
+  --grey-dark: hsl(231deg, 9%, 52%);
+  --grey: hsl(231deg, 9%, 74%);
+  --grey-light: hsl(231deg, 9%, 92%);
+  --light: hsl(231deg, 9%, 98%);
+  --white: hsl(231deg, 9%, 100%);
+  --red: hsl(348deg, 69%, 50%);
+  --red-dark: #a50e2c;
+  --red-light: #f1ced5;
+  --orange: hsl(24deg, 69%, 58%);
+  --orange-dark: #bf5610;
+  --orange-light: #f3e1d5;
+  --yellow: hsl(44deg, 72%, 60%);
+  --yellow-dark: #c7960f;
+  --yellow-light: #f4ecd7;
+  --green: hsl(141deg, 68%, 48%);
+  --green-dark: #0e9e40;
+  --green-light: #ccf0d8;
+  --turquoise: hsl(171deg, 68%, 50%);
+  --turquoise-dark: #0ea48e;
+  --turquoise-light: #cef0eb;
+  --blue: hsl(207deg, 68%, 50%);
+  --blue-dark: #0e61a4;
+  --blue-light: #cee1f0;
+  --purple: hsl(271deg, 68%, 48%);
+  --purple-dark: #580e9e;
+  --purple-light: #deccf0;
+}
+
+html {
+  color: hsl(231deg, 9%, 4%);
+  min-width: 300px;
+  font-size: 16px;
+  text-rendering: optimizeLegibility;
+}
+
+body {
+  font-family: "Inter";
+  line-height: 1.15;
+}
+
+h1,
+.title {
+  font-family: "IBM Plex Serif";
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+h1:not(.is-flat):not(:first-child),
+.title:not(.is-flat):not(:first-child) {
+  margin-top: 1.5rem;
+}
+h1:not(.is-flat):not(:last-child),
+.title:not(.is-flat):not(:last-child) {
+  margin-bottom: 1rem;
+}
+
+h2,
+.subtitle {
+  font-family: "IBM Plex Serif";
+  font-size: 1.125rem;
+  font-weight: bold;
+}
+h2:not(.is-flat):not(:first-child),
+.subtitle:not(.is-flat):not(:first-child) {
+  margin-top: 1.25rem;
+}
+h2:not(.is-flat):not(:last-child),
+.subtitle:not(.is-flat):not(:last-child) {
+  margin-bottom: 0.5rem;
+}
+.title + h2:not(.is-flat):not(:first-child),
+.title + .subtitle:not(.is-flat):not(:first-child) {
+  margin-top: 1rem;
+}
+
+h3,
+.subsubtitle {
+  font-family: "IBM Plex Serif";
+  font-size: 1rem;
+  font-weight: bold;
+}
+h3:not(.is-flat):not(:first-child),
+.subsubtitle:not(.is-flat):not(:first-child) {
+  margin-top: 0.5rem;
+}
+h3:not(.is-flat):not(:last-child),
+.subsubtitle:not(.is-flat):not(:last-child) {
+  margin-bottom: 0.5rem;
+}
+
+p:not(.is-flat):not(:first-child),
+.paragraph:not(.is-flat):not(:first-child) {
+  margin-top: 0.5rem;
+}
+p:not(.is-flat):not(:last-child),
+.paragraph:not(.is-flat):not(:last-child) {
+  margin-bottom: 0.5rem;
+}
+
+.label {
+  color: hsl(231deg, 9%, 30%);
+  font-size: 0.75em;
+}
+.label:not(.is-flat):not(:first-child) {
+  margin-top: 0.5rem;
+}
+.label:not(.is-flat):not(:last-child) {
+  margin-bottom: 0.5rem;
+}
+.label.is-caps {
+  text-transform: uppercase;
+  letter-spacing: 0.23em;
+  transform: scale(1, 0.95);
+}
+
+b {
+  font-weight: 700;
+}
+
+button {
+  font-size: 1em;
+}
+
+em {
+  font-style: italic;
+}
+
+label {
+  display: block;
+}
+
+.fl {
+  display: flex;
+}
+
+.fl-col {
+  flex-direction: column;
+}
+
+.fl-rcol {
+  flex-direction: column-reverse;
+}
+
+.fl-row {
+  flex-direction: row;
+}
+
+.fl-rrow {
+  flex-direction: row-reverse;
+}
+
+.jc-space-around {
+  display: flex;
+  justify-content: space-around;
+}
+
+.jc-space-between {
+  display: flex;
+  justify-content: space-between;
+}
+
+.jc-center {
+  display: flex;
+  justify-content: center;
+}
+
+.t-left {
+  text-align: left;
+}
+
+.t-center {
+  text-align: center;
+}
+
+.t-right {
+  text-align: right;
+}
+
+.ai-center {
+  align-items: center;
+}
+
+.as-center {
+  align-self: center;
+}
+
+.w-100 {
+  width: 100%;
+}
+
+.h-100 {
+  height: 100%;
+}
+
+.border {
+  border-style: solid;
+  border-width: 1px;
+  border-color: hsl(231deg, 9%, 74%);
+}
+
+.r {
+  border-radius: 4px;
+}
+
+.r-small {
+  border-radius: 2px;
+}
+
+.r-large {
+  border-radius: 10px;
+}
+
+.r-rounded {
+  border-radius: 9999px;
+}
+
+.s-1 {
+  font-size: 2.5rem;
+}
+
+.s-2 {
+  font-size: 2rem;
+}
+
+.s-3 {
+  font-size: 1.5rem;
+}
+
+.s-4 {
+  font-size: 1.25rem;
+}
+
+.s-5 {
+  font-size: 1.125rem;
+}
+
+.s-6 {
+  font-size: 1rem;
+}
+
+.s-7 {
+  font-size: 0.75rem;
+}
+
+.field:not(.is-flat):not(:first-child) {
+  margin-top: 0.75rem;
+}
+.field:not(.is-flat):not(:last-child) {
+  margin-bottom: 0.75rem;
+}
+
+textarea, input:not([type]),
+input[type=text],
+input[type=password],
+input[type=date] {
+  box-sizing: border-box;
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.075);
+  background-color: hsl(231deg, 9%, 100%);
+  border-color: hsl(231deg, 9%, 74%);
+  border-width: 1px;
+  border-style: solid;
+  padding: 0.25em 0.25em;
+  max-width: 100%;
+  width: 100%;
+  border-radius: 4px;
+  font-size: 1em;
+}
+textarea[readonly], input[readonly]:not([type]),
+input[readonly][type=text],
+input[readonly][type=password],
+input[readonly][type=date] {
+  box-shadow: none;
+}
+textarea {
+  display: block;
+  resize: vertical;
+  min-width: 100%;
+  max-width: 100%;
+  min-height: 8em;
+  max-height: 40em;
+}
+
+.link,
+a:not(.no-link) {
+  background-color: unset;
+  color: #003262;
+  text-decoration: none;
+  cursor: pointer;
+}
+.link:hover,
+a:not(.no-link):hover {
+  text-decoration: underline;
+}
+
+a.no-link {
+  color: unset;
+  text-decoration: unset;
+}
+
+/*
+
+I don't think there is almost ever a scenario when you want columns to be flex
+if and only if it's smaller. Working with that assumption, `columns
+is-desktop` defines that you want it to only begin being a columns after the
+desktop breakpoint.
+
+*/
+.columns {
+  display: flex;
+  flex-wrap: wrap;
+  margin: -0.5rem;
+}
+.columns.is-centered {
+  justify-content: center;
+}
+.columns.is-vcentered {
+  align-items: center;
+}
+.columns.is-not-wrapped {
+  flex-wrap: nowrap;
+}
+@media only screen and (max-width: 900px) {
+  .columns.is-big {
+    display: block;
+  }
+}
+
+.column {
+  box-sizing: border-box;
+  display: block;
+  box-sizing: border-box;
+  flex-basis: 0;
+  flex-grow: 1;
+  flex-shrink: 1;
+  padding: 0.5rem;
+}
+.column.is-1 {
+  flex: none;
+  width: 8.3333333333%;
+}
+.column.is-offset-1 {
+  margin-left: 8.3333333333%;
+}
+.column.is-2 {
+  flex: none;
+  width: 16.6666666667%;
+}
+.column.is-offset-2 {
+  margin-left: 16.6666666667%;
+}
+.column.is-3 {
+  flex: none;
+  width: 25%;
+}
+.column.is-offset-3 {
+  margin-left: 25%;
+}
+.column.is-4 {
+  flex: none;
+  width: 33.3333333333%;
+}
+.column.is-offset-4 {
+  margin-left: 33.3333333333%;
+}
+.column.is-5 {
+  flex: none;
+  width: 41.6666666667%;
+}
+.column.is-offset-5 {
+  margin-left: 41.6666666667%;
+}
+.column.is-6 {
+  flex: none;
+  width: 50%;
+}
+.column.is-offset-6 {
+  margin-left: 50%;
+}
+.column.is-7 {
+  flex: none;
+  width: 58.3333333333%;
+}
+.column.is-offset-7 {
+  margin-left: 58.3333333333%;
+}
+.column.is-8 {
+  flex: none;
+  width: 66.6666666667%;
+}
+.column.is-offset-8 {
+  margin-left: 66.6666666667%;
+}
+.column.is-9 {
+  flex: none;
+  width: 75%;
+}
+.column.is-offset-9 {
+  margin-left: 75%;
+}
+.column.is-10 {
+  flex: none;
+  width: 83.3333333333%;
+}
+.column.is-offset-10 {
+  margin-left: 83.3333333333%;
+}
+.column.is-11 {
+  flex: none;
+  width: 91.6666666667%;
+}
+.column.is-offset-11 {
+  margin-left: 91.6666666667%;
+}
+.column.is-12 {
+  flex: none;
+  width: 100%;
+}
+.column.is-offset-12 {
+  margin-left: 100%;
+}
+@media only screen and (min-width: 900px) {
+  .column.is-1-big {
+    flex: none;
+    width: 8.3333333333%;
+  }
+  .column.is-offset-1-big {
+    margin-left: 8.3333333333%;
+  }
+  .column.is-2-big {
+    flex: none;
+    width: 16.6666666667%;
+  }
+  .column.is-offset-2-big {
+    margin-left: 16.6666666667%;
+  }
+  .column.is-3-big {
+    flex: none;
+    width: 25%;
+  }
+  .column.is-offset-3-big {
+    margin-left: 25%;
+  }
+  .column.is-4-big {
+    flex: none;
+    width: 33.3333333333%;
+  }
+  .column.is-offset-4-big {
+    margin-left: 33.3333333333%;
+  }
+  .column.is-5-big {
+    flex: none;
+    width: 41.6666666667%;
+  }
+  .column.is-offset-5-big {
+    margin-left: 41.6666666667%;
+  }
+  .column.is-6-big {
+    flex: none;
+    width: 50%;
+  }
+  .column.is-offset-6-big {
+    margin-left: 50%;
+  }
+  .column.is-7-big {
+    flex: none;
+    width: 58.3333333333%;
+  }
+  .column.is-offset-7-big {
+    margin-left: 58.3333333333%;
+  }
+  .column.is-8-big {
+    flex: none;
+    width: 66.6666666667%;
+  }
+  .column.is-offset-8-big {
+    margin-left: 66.6666666667%;
+  }
+  .column.is-9-big {
+    flex: none;
+    width: 75%;
+  }
+  .column.is-offset-9-big {
+    margin-left: 75%;
+  }
+  .column.is-10-big {
+    flex: none;
+    width: 83.3333333333%;
+  }
+  .column.is-offset-10-big {
+    margin-left: 83.3333333333%;
+  }
+  .column.is-11-big {
+    flex: none;
+    width: 91.6666666667%;
+  }
+  .column.is-offset-11-big {
+    margin-left: 91.6666666667%;
+  }
+  .column.is-12-big {
+    flex: none;
+    width: 100%;
+  }
+  .column.is-offset-12-big {
+    margin-left: 100%;
+  }
+}
+
+.container, .navbar {
+  box-sizing: border-box;
+  margin: 0 auto;
+  padding: 0 32px;
+  width: 100%;
+}
+@media only screen and (min-width: 900px) {
+  .container, .navbar {
+    width: 860px;
+  }
+}
+.container.max-width-big, .max-width-big.navbar {
+  max-width: 900px;
+}
+
+.section {
+  background-color: rgba(var(--b), 1);
+}
+.section.is-small {
+  padding: 2em 0;
+}
+.section.is-medium {
+  padding: 2em 0;
+}
+.section.is-large {
+  padding: 4em 0;
+}
+.section.is-fullheight {
+  box-sizing: border-box;
+  min-height: 100vh;
+}
+
+.button, a.button {
+  display: inline-block;
+  box-sizing: border-box;
+  border-width: 1px;
+  border-style: solid;
+  border-color: hsl(231deg, 9%, 74%);
+  border-radius: 4px;
+  color: inherit;
+  cursor: pointer;
+  font-family: inherit;
+  font-size: 0.875em;
+  justify-content: center;
+  text-align: center;
+  white-space: nowrap;
+  padding: 0.375em 0.75em;
+  background-color: rgba(var(--b), 1);
+  text-decoration: none;
+}
+.button:hover, a.button:hover {
+  background: hsl(231deg, 9%, 98%);
+}
+.button.is-black, a.button.is-black {
+  background-color: hsl(231deg, 9%, 4%);
+  border-color: #03040b;
+  color: white;
+}
+.button.is-black:hover, a.button.is-black:hover {
+  background-color: #03040b;
+}
+.button.is-dark, a.button.is-dark {
+  background-color: hsl(231deg, 9%, 30%);
+  border-color: #182153;
+  color: white;
+}
+.button.is-dark:hover, a.button.is-dark:hover {
+  background-color: #182153;
+}
+.button.is-grey-dark, a.button.is-grey-dark {
+  background-color: hsl(231deg, 9%, 52%);
+  border-color: #2a398f;
+  color: white;
+}
+.button.is-grey-dark:hover, a.button.is-grey-dark:hover {
+  background-color: #2a398f;
+}
+.button.is-grey, a.button.is-grey {
+  background-color: hsl(231deg, 9%, 74%);
+  border-color: #4155c7;
+  color: black;
+}
+.button.is-grey:hover, a.button.is-grey:hover {
+  background-color: #4155c7;
+}
+.button.is-grey-light, a.button.is-grey-light {
+  background-color: hsl(231deg, 9%, 92%);
+  border-color: #7382d6;
+  color: black;
+}
+.button.is-grey-light:hover, a.button.is-grey-light:hover {
+  background-color: #7382d6;
+}
+.button.is-light, a.button.is-light {
+  background-color: hsl(231deg, 9%, 98%);
+  border-color: #8390db;
+  color: black;
+}
+.button.is-light:hover, a.button.is-light:hover {
+  background-color: #8390db;
+}
+.button.is-white, a.button.is-white {
+  background-color: hsl(231deg, 9%, 100%);
+  border-color: #8995dc;
+  color: black;
+}
+.button.is-white:hover, a.button.is-white:hover {
+  background-color: #8995dc;
+}
+.button.is-red, a.button.is-red {
+  background-color: hsl(348deg, 69%, 50%);
+  border-color: #a50e2c;
+  color: white;
+}
+.button.is-red:hover, a.button.is-red:hover {
+  background-color: #a50e2c;
+}
+.button.is-orange, a.button.is-orange {
+  background-color: hsl(24deg, 69%, 58%);
+  border-color: #bf5610;
+  color: black;
+}
+.button.is-orange:hover, a.button.is-orange:hover {
+  background-color: #bf5610;
+}
+.button.is-yellow, a.button.is-yellow {
+  background-color: hsl(44deg, 72%, 60%);
+  border-color: #c7960f;
+  color: black;
+}
+.button.is-yellow:hover, a.button.is-yellow:hover {
+  background-color: #c7960f;
+}
+.button.is-green, a.button.is-green {
+  background-color: hsl(141deg, 68%, 48%);
+  border-color: #0e9e40;
+  color: black;
+}
+.button.is-green:hover, a.button.is-green:hover {
+  background-color: #0e9e40;
+}
+.button.is-turquoise, a.button.is-turquoise {
+  background-color: hsl(171deg, 68%, 50%);
+  border-color: #0ea48e;
+  color: black;
+}
+.button.is-turquoise:hover, a.button.is-turquoise:hover {
+  background-color: #0ea48e;
+}
+.button.is-blue, a.button.is-blue {
+  background-color: hsl(207deg, 68%, 50%);
+  border-color: #0e61a4;
+  color: white;
+}
+.button.is-blue:hover, a.button.is-blue:hover {
+  background-color: #0e61a4;
+}
+.button.is-purple, a.button.is-purple {
+  background-color: hsl(271deg, 68%, 48%);
+  border-color: #580e9e;
+  color: white;
+}
+.button.is-purple:hover, a.button.is-purple:hover {
+  background-color: #580e9e;
+}
+
+.box {
+  display: flex;
+  background-color: hsl(231deg, 9%, 100%);
+  border-color: hsl(231deg, 9%, 74%);
+  border-width: 1px;
+  border-style: solid;
+  border-radius: 4px;
+  padding: 0.75rem;
+}
+.box.is-vertical {
+  display: block;
+}
+
+.swatch {
+  position: relative;
+  display: inline-flex;
+  height: 1em;
+  width: 1em;
+  border-radius: 4px;
+  align-self: center;
+  border: 1px solid hsl(231deg, 9%, 74%);
+}
+.swatch:not(:last-child) {
+  margin-right: 0.5em;
+}
+.swatch.is-black {
+  background-color: hsl(231deg, 9%, 4%);
+  border-color: #080809;
+  color: white;
+}
+.swatch.is-dark {
+  background-color: hsl(231deg, 9%, 30%);
+  border-color: #3a3b40;
+  color: white;
+}
+.swatch.is-grey-dark {
+  background-color: hsl(231deg, 9%, 52%);
+  border-color: #65676f;
+  color: white;
+}
+.swatch.is-grey {
+  background-color: hsl(231deg, 9%, 74%);
+  border-color: #92949c;
+  color: black;
+}
+.swatch.is-grey-light {
+  background-color: hsl(231deg, 9%, 92%);
+  border-color: #b9babf;
+  color: black;
+}
+.swatch.is-light {
+  background-color: hsl(231deg, 9%, 98%);
+  border-color: #c5c6ca;
+  color: black;
+}
+.swatch.is-white {
+  background-color: hsl(231deg, 9%, 100%);
+  border-color: #cacace;
+  color: black;
+}
+.swatch.is-red-light {
+  background-color: #f1ced5;
+  border-color: #c89da6;
+  color: black;
+}
+.swatch.is-red {
+  background-color: hsl(348deg, 69%, 50%);
+  border-color: #894351;
+  color: white;
+}
+.swatch.is-red-dark {
+  background-color: #a50e2c;
+  border-color: #662935;
+  color: white;
+}
+.swatch.is-orange-light {
+  background-color: #f3e1d5;
+  border-color: #cbb3a3;
+  color: black;
+}
+.swatch.is-orange {
+  background-color: hsl(24deg, 69%, 58%);
+  border-color: #9f6e4d;
+  color: black;
+}
+.swatch.is-orange-dark {
+  background-color: #bf5610;
+  border-color: #764c30;
+  color: white;
+}
+.swatch.is-yellow-light {
+  background-color: #f4ecd7;
+  border-color: #ccc1a3;
+  color: black;
+}
+.swatch.is-yellow {
+  background-color: hsl(44deg, 72%, 60%);
+  border-color: #a68f4e;
+  color: black;
+}
+.swatch.is-yellow-dark {
+  background-color: #c7960f;
+  border-color: #7b6731;
+  color: black;
+}
+.swatch.is-green-light {
+  background-color: #ccf0d8;
+  border-color: #9cc7ab;
+  color: black;
+}
+.swatch.is-green {
+  background-color: hsl(141deg, 68%, 48%);
+  border-color: #418358;
+  color: black;
+}
+.swatch.is-green-dark {
+  background-color: #0e9e40;
+  border-color: #28613c;
+  color: black;
+}
+.swatch.is-turquoise-light {
+  background-color: #cef0eb;
+  border-color: #9ec7c1;
+  color: black;
+}
+.swatch.is-turquoise {
+  background-color: hsl(171deg, 68%, 50%);
+  border-color: #43897e;
+  color: black;
+}
+.swatch.is-turquoise-dark {
+  background-color: #0ea48e;
+  border-color: #29655c;
+  color: black;
+}
+.swatch.is-blue-light {
+  background-color: #cee1f0;
+  border-color: #9eb5c7;
+  color: black;
+}
+.swatch.is-blue {
+  background-color: hsl(207deg, 68%, 50%);
+  border-color: #436989;
+  color: white;
+}
+.swatch.is-blue-dark {
+  background-color: #0e61a4;
+  border-color: #294a65;
+  color: white;
+}
+.swatch.is-purple-light {
+  background-color: #deccf0;
+  border-color: #b29cc7;
+  color: black;
+}
+.swatch.is-purple {
+  background-color: hsl(271deg, 68%, 48%);
+  border-color: #634183;
+  color: white;
+}
+.swatch.is-purple-dark {
+  background-color: #580e9e;
+  border-color: #462861;
+  color: white;
+}
+
+.card {
+  --bo: toChannels(hsl(231deg, 9%, 74%));
+  background-color: hsl(231deg, 9%, 100%);
+  border-color: hsl(231deg, 9%, 74%);
+  border-width: 1px;
+  border-style: solid;
+  border-radius: 4px;
+}
+.card:not(.is-flat):not(:first-child) {
+  margin-top: 1rem;
+}
+.card:not(.is-flat):not(:last-child) {
+  margin-bottom: 1rem;
+}
+.card > *:not(:first-child) {
+  border-color: hsl(231deg, 9%, 74%);
+  border-top-width: 1px;
+  border-top-style: solid;
+}
+
+.card-header {
+  font-weight: bold;
+  padding: 0.75rem;
+  background-color: hsl(231deg, 9%, 98%);
+}
+
+.card-body > *:not(:first-child) {
+  border-color: hsl(231deg, 9%, 74%);
+  border-top-width: 1px;
+  border-top-style: solid;
+}
+
+.card-item {
+  display: flex;
+  padding: 0.75rem;
+  background-color: hsl(231deg, 9%, 100%);
+  border: 0;
+  width: 100%;
+  box-sizing: border-box;
+}
+.card.is-selectable > .card-item:hover, .card.is-selectable > .card-body > .card-item:hover {
+  background-color: hsl(231deg, 9%, 98%);
+}
+.card-item:not(.is-vertical) {
+  align-items: center;
+}
+.card-item.is-vertical {
+  display: block;
+}
+
+a {
+  font-weight: 500;
+}
+
+body {
+  background-color: #ebe9e5;
+  color: #333;
+}
+
+.navbar {
+  position: relative;
+  padding-top: 2rem;
+  padding-bottom: 0.5rem;
+}
+
+.navbar-brand {
+  font-weight: 900;
+  font-size: 1.25rem;
+  font-family: "IBM Plex Serif";
+}
+
+.navbar-brand-image {
+  position: absolute;
+  left: -2rem;
+}
+
+a.navbar-brand, .navbar-brand a {
+  display: block;
+  color: inherit;
+}
+
+.navbar-brand span {
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+.navbar-menu {
+  margin-top: 0.5rem;
+}
+
+table {
+  border-collapse: separate;
+  border-radius: 4px;
+  background-color: white;
+}
+
+table {
+  border: 1px solid #999;
+}
+
+td + td, th + th {
+  border-left: 1px solid #999;
+}
+
+th:first-child {
+  border-radius: 4px 0 0 0;
+}
+
+th:last-child {
+  border-radius: 0 4px 0 0;
+}
+
+tr:not(:first-child) td, tr:not(:first-child) th {
+  border-top: 1px solid #999;
+}
+
+tr.break {
+  font-style: italic;
+  background: repeating-linear-gradient(-45deg, transparent, transparent 10px, rgba(255, 155, 0, 0.2) 10px, rgba(255, 155, 0, 0.2) 20px);
+}
+
+td, th {
+  padding: 0.25rem;
+}
+
+th {
+  background-color: #ddd;
+  font-weight: bold;
+}
+
+strong {
+  font-weight: bold;
+}
+
+.announcement > span {
+  display: block;
+  font-size: 0.75rem;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.announcement {
+  background: white;
+  border: 1px solid #999;
+  border-radius: 4px;
+  padding: 0.5rem;
+}
+
+/*# sourceMappingURL=style.css.map */
