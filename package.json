@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-		"build": "sass ./static/css/style.scss ./static/css/style.css"
+    "serve": "hugo serve -d docs",
+    "build": "hugo -d docs"
   },
   "author": "",
   "license": "ISC",

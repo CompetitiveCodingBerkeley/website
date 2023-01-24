@@ -20,25 +20,25 @@ Monday 6:30-8 PM @ Physics Building 2
     <td>1 (jan. 23)</td>
     <td>input and output, time complexity</td>
     <td>1.2, 2</td>
-    <td><a href="">slides</a></td>
+    <td><a href="https://docs.google.com/presentation/d/1DkQAX4l9HEoBdw2316dIOjeGbncqkb4_DFz_ElGeors/edit?usp=sharing">slides</a></td>
 </tr>
 <tr>
     <td>2 (jan. 30)</td>
     <td>prefix sums</td>
     <td>9.1, 2.4</td>
-    <td><a href="">slides</a></td>
+    <td><a>slides</a></td>
 </tr>
 <tr>
     <td>3 (feb. 6)</td>
     <td>greedy algorithms</td>
     <td>6</td>
-    <td><a href="">slides</a></td>
+    <td><a>slides</a></td>
 </tr>
 <tr>
     <td>4 (feb. 13)</td>
     <td>sorting, two pointers</td>
     <td>3.1, 3.2</td>
-    <td><a href="">slides</a></td>
+    <td><a>slides</a></td>
 </tr>
 <tr class="break">
     <td>5 (feb. 20)</td>
@@ -50,25 +50,25 @@ Monday 6:30-8 PM @ Physics Building 2
     <td>6 (feb. 27)</td>
     <td>binary search</td>
     <td>3.3</td>
-    <td><a href="">slides</a></td>
+    <td><a>slides</a></td>
 </tr>
 <tr>
     <td>7 (mar. 6)</td>
     <td>graph representations</td>
     <td>11, 12</td>
-    <td><a href="">slides</a></td>
+    <td><a>slides</a></td>
 </tr>
 <tr>
     <td>8 (mar. 13)</td>
     <td>complete search with recursion</td>
     <td>5</td>
-    <td><a href="">slides</a></td>
+    <td><a>slides</a></td>
 </tr>
 <tr>
     <td>9 (mar. 20)</td>
     <td>dynamic programming</td>
     <td>7</td>
-    <td><a href="">slides</a></td>
+    <td><a>slides</a></td>
 </tr>
 <tr class="break">
     <td>10 (mar. 27)</td>
@@ -80,25 +80,25 @@ Monday 6:30-8 PM @ Physics Building 2
     <td>11 (apr. 3)</td>
     <td>more dynamic programming</td>
     <td>7</td>
-    <td><a href="">slides</a></td>
+    <td><a>slides</a></td>
 </tr>
 <tr>
     <td>12 (apr. 10)</td>
     <td>segment trees</td>
     <td>9.3</td>
-    <td><a href="">slides</a></td>
+    <td><a>slides</a></td>
 </tr>
 <tr>
     <td>13 (apr. 17)</td>
     <td>rolling hashes</td>
     <td>26.3</td>
-    <td><a href="">slides</a></td>
+    <td><a>slides</a></td>
 </tr>
 <tr>
     <td>14 (apr. 24)</td>
     <td>wrap-up and final contest</td>
     <td></td>
-    <td><a href="">slides</a></td>
+    <td><a>slides</a></td>
 </tr>
 </table>
 
@@ -106,7 +106,10 @@ Monday 6:30-8 PM @ Physics Building 2
 
 ## Coursework
 
-The class is composed of two components, the lecture between 6:30-8 PM on Mondays introducing concepts and a corresponding weekly assignment due at Sunday midnight. We expect the homework to take around one hour of work. Some homeworks may have optional challenge problems. Remote office hours will be available on discord for which we will post schedules for after lecture.
+The class is composed of two components, the lecture between 6:30-8 PM on Mondays introducing concepts and a corresponding weekly assignment due at Sunday midnight. Two homework assignments will be dropped!
+We expect the homework to take around one hour of work. Some homeworks may have optional challenge problems. Homework will be conducted through Codeforces.
+
+Remote office hours will be available on discord; schedules will be announced later this week.
 
 ## Grading
 
@@ -124,10 +127,11 @@ Study groups are allowed and encouraged. Sharing ideas is fine, but sharing code
 # Course Staff
 
 - Jelani Nelson (advisor)
-- Xavier Plourde
-- Nishant Bhakar
-- James Rungsawang
-- Ryan Zhu
-- Chris Liu
-- Vivek Verma
-- Young-jin Park
+- Xavier Plourde (lecture/content)
+- Nishant Bhakar (OH)
+- James Rungsawang (lecture/content)
+- Ryan Zhu (lecture/content/OH)
+- Chris Liu (content/problem writing)
+- Vivek Verma (lecture)
+- Youngmin Park (OH)
+- Young-jin Park (infra)
